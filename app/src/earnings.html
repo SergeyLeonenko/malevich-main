@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Як заробляти більше</title>
+</head>
+
+<body>
+    <header class="dark-bg text-xl fixed top-0 w-full z-50">
+        <div class="container py-4 flex-wrap gap-4 sm:flex-nowrap justify-between">
+            <a href="index.html" class="hidden lg:block min-h-12 min-w-40 order-1">
+                <img src="./images/logo_header.svg" alt="logo">
+            </a>
+            <a href="index.html" class="lg:hidden min-h-6 min-w-24 order-1">
+                <img src="./images/logo_header_xs.svg" alt="logo">
+            </a>
+            <nav
+                class="flex items-center m-auto justify-between gap-2 md:gap-4 text-xs md:text-sm text-main-color order-3 sm:order-2">
+                <a href="https://t.me/+380995141828" target="_blank" class="flex items-center gap-2 group">
+                    <img src="./images/icon-telegram.svg" alt="icon-telegram"
+                        class="grayscale max-h-6 group-hover:grayscale-0">
+                    <span>38 099 514 18 28</span>
+                </a>
+                <a href="https://t.me/MalevichFactoryBot">Новини</a>
+                <a href="https://sites.google.com/view/mfbook/malevich">Ми працюємо</a>
+            </nav>
+            <div class="flex gap-4 order-2 sm:order-3">
+                <button class="button">Вхiд</button>
+                <button class="button primary-button">Реєстрація</button>
+            </div>
+        </div>
+    </header>
+    <div class="dark-bg">
+        <section class="flex-col pt-36 pb-10">
+            <div class="container flex-col">
+                <h1 class="title text-white text-3xl md:text-5xl lg:text-7xl text-center md:max-w-[80%] mb-10">Скільки
+                    фотограф може заробити на фотопродуктах</h1>
+                <div
+                    class="bg-white px-4 pt-4 md:px-8 md:pt-6 rounded-xl w-full max-w-[800px] text-neutral-500 overflow-hidden">
+                    <div class="flex items-center text-cente gap-2 title mb-12">
+                        <hr class="basis-1/6 bg-main-color h-[2px]">
+                        <div class="basis-4/6 text-center sm:text-2xl">Скiльки зйомок ви плануєте за рiк? </div>
+                        <hr class="basis-1/6 bg-main-color h-[2px]">
+                    </div>
+                    <form class="flex flex-col gap-y-12 mb-12">
+                        <div class="flex">
+                            <div class="w-full">Вартicть зйомки до $200:</div>
+                            <div class="range-slider-container">
+                                <output class="range-value" id="rangeValue1">0</output>
+                                <input type="range" min="0" max="100" value="0" class="range-slider" id="slider1">
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="w-full">вiд $200 до $500:</div>
+                            <div class="range-slider-container">
+                                <output class="range-value" id="rangeValue2">0</output>
+                                <input type="range" min="0" max="100" value="0" class="range-slider" id="slider2">
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="w-full">Вартicть зйомки вiд $500:</div>
+                            <div class="range-slider-container">
+                                <output class="range-value" id="rangeValue3">0</output>
+                                <input type="range" min="0" max="100" value="0" class="range-slider" id="slider3">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="flex justify-between">
+                        <div class="title flex items-center text-sm sm:text-xl w-full p-2 border-t border-neutral-400">
+                            Ваш потенцiйний дохiд за фотопродукт за рiк:
+                        </div>
+                        <div
+                            class="basis-2/5 max-w-40 bg-main-color p-2 md:p-4 relative -right-4 md:-right-8 text-white">
+                            <div class="title text-4xl" id="revenu">$0</div>
+                            <div class="text-xs underline cursor-pointer">Як рахували</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container relative">
+            <img src="./images/money.jpg" alt="">
+            <div class="text-white font-light text-sm md:text-xl absolute max-w-md right-28">Кожного разу, коли ви не
+                перетворюєте фотосесію в фотопродукт, ви по суті
+                <span class="font-medium">спалюєте свої гроші</span>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
